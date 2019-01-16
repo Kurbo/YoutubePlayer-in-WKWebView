@@ -220,7 +220,7 @@ typedef NS_ENUM(NSInteger, WKYTPlayerError) {
  * @param playerVars An NSDictionary of player parameters.
  * @return YES if player has been configured correctly, NO otherwise.
  */
-- (BOOL)loadWithPlaylistId:(nonnull NSString *)playlistId playerVars:(nullable NSDictionary *)playerVars;
+- (BOOL)loadWithVideoId:(NSString *)videoId playerVars:(NSDictionary *)playerVars allowInline:(BOOL)allowInline;
 
 /**
  * This method loads an iframe player with the given player parameters. Usually you may want to use
